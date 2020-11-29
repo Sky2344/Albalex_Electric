@@ -122,6 +122,17 @@
                             </button>
                             </div>
                     </div>
+                            <br>
+                            <br>
+                            <div class="row show-grid">
+                       <div class="col-md-5">
+                           </div> 
+                            <div class="col-md-2">
+                                <a href="index.jsp" class="btn btn-default" role="button" title="INICIO">INICIO
+                                    <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
                 </div>
                             </div>
             </div>

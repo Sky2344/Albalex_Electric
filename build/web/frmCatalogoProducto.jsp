@@ -19,6 +19,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href="css/estilo03.css" rel="stylesheet" type="text/css"/>
+        <link href="css/ex1.css" rel="stylesheet" type="text/css"/>
         <title>JSP Page</title>
     </head>
     <body>
@@ -86,7 +87,9 @@
                     </div>
                     <br>
                     <%-------------------------------------------------------------%>
+                    
                     <div class="row show-grid">
+                        <div class="ex3">
                         <table border="1" class="table">
                         <thead>
                             <tr>
@@ -97,6 +100,7 @@
                                 <th>PRECIO</th>
                             </tr>
                         </thead>
+                        
                         <tbody>
                             <%
                                 for (int i = 0; i < lVistaProducto.lVisPro.size(); i++) {
@@ -106,7 +110,7 @@
                                 <td><%=visPro.getCodProducto() %></td>
                                 <td><%=visPro.getNombre() %></td>
                                 <td><%=visPro.getNomCategoria() %></td>
-                                <td><input  type="number" name="Stock <%=i %>" value="<%=visPro.getStock() %>" size="2px"> </td>
+                                <td><input  min="0" type="number" name="Stock <%=i %>" value="<%=visPro.getStock() %>" size="2px"> </td>
                                 <td><input  type="number" min="0.01" step="any"  name="Precio <%=i %>" value="<%=visPro.getPrecio() %>" size="2px"> </td>
                             </tr>
                         <input class="form-control"  type="text" name="codigo <%=i %>" value="<%=visPro.getCodProducto() %>" style="display:none">
@@ -116,12 +120,19 @@
                         </tbody>
                     </table>
                     </div>
+                        </div>
                         
                    <%---------------------------------------------------------------------%>
                    <div class="row show-grid">
-                       <div class="col-md-5">
-                           
-                       </div>
+                       <div class="col-md-3">
+                           </div> 
+                            <div class="col-md-1">
+                                <a href="index.jsp" class="btn btn-default" role="button" title="INICIO">INICIO
+                                    <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                       
+                       <div class="col-md-3"></div>
                        <div class="col-md-1">
                            <button class="btn btn-default" type="submit" name="btnGuardar">Guardar 
                                 <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true" ></span>

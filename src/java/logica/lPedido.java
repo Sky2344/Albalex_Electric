@@ -24,7 +24,6 @@ public class lPedido {
         }
     }
     public String ObtenerIdPedido(){
-        
         try {
             con.consulta("Select max(idpedido) from pedido");
             con.getRs().next();

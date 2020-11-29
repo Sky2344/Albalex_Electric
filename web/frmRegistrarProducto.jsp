@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
+        <link href="css/ex2.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilo02.css" rel="stylesheet" type="text/css"/>
         <title>REGISTRAR PRODUCTO</title>
     </head>
@@ -62,6 +62,8 @@
                         <input type="number" min="0.01" step="any" name="txtPrecio" class="form-control" placeholder="Precio del Producto" required="">
                         <br>
                         <input class="btn btn-block" type="submit" value="Agregar  Producto" name="btnAgregar" />
+                        <br>
+                        <div class="ex3">
                         <table border="1" class="table">
                             <thead>
                                 <tr>
@@ -94,8 +96,21 @@
                                     }
                                 %>
                             </tbody>
+                        
                         </table>
+                            </div>
+                            <br>
+                            <div class="row show-grid">
+                       <div class="col-md-5">
+                           </div> 
+                            <div class="col-md-2">
+                                <a href="index.jsp" class="btn btn-default" role="button" title="INICIO">INICIO
+                                    <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                            
                 </div>
             </div>
         </form>

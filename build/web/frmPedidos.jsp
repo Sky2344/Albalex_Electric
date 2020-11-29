@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
+        <link href="css/ex1.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilo03.css" rel="stylesheet" type="text/css"/>
         
         <title>Pedidos</title>
@@ -66,8 +66,10 @@
                             </button>
                         </div>
                     </div>
+                            <br>x
                     <%-------------------------------------------------------------%>
                     <div class="row show-grid">
+                        <div class="ex3">
                         <table border="1" class="table">
                             <thead>
                                 <tr>
@@ -102,7 +104,18 @@
                                 %>
                             </tbody>
                         </table>
-                    </div>        
+                        </div>
+                    </div>
+                            <br>
+                            
+                            <div class="row show-grid">
+                            <div class="col-md-5"></div>
+                            <div class="col-md-1">
+                                <a href="index.jsp" class="btn btn-default" role="button" title="INICIO">INICIO
+                                    <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            </div>
                 </div>
             </div>
         </div>

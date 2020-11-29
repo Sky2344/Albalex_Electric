@@ -5,7 +5,10 @@
  */
 package logica;
 import java.sql.*;
-
+/**
+ *
+ * @author Ramiro
+ */
 public class conexion {
     private Connection con;
     private Statement st;
@@ -13,9 +16,7 @@ public class conexion {
     private String url;
 
     public conexion() {
-        
-        url="jdbc:sqlserver://albalexelectric.database.windows.net:1433;database=albalexelectric;user=ramiro@albalexelectric;password=Sa123456;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30; "+";user=sa;password=sa";
-        
+        url="jdbc:sqlserver://albalexelectric.database.windows.net:1433;database=albalexelectric;user=ramiro@albalexelectric;password=Sa123456;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             con=DriverManager.getConnection(url);

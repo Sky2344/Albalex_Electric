@@ -28,6 +28,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href="css/estilo03.css" rel="stylesheet" type="text/css"/>
+        <link href="css/ex3.css" rel="stylesheet" type="text/css"/>
         <title>JSP Page</title>
     </head>
     <body>
@@ -124,7 +125,7 @@
                                 <label>Direccion:</label>
                             </div>
                             <div class="col-md-6">
-                                <input type="text"  name="txtDIRECCION" class="form-control"  value="Direccion" >
+                                <input type="text"  name="txtDIRECCION" class="form-control"  placeholder="Ingresar Direccion   "  >
                             </div>
                             <div class="col-md-1">
                                 <label>Distrito:</label>
@@ -154,7 +155,7 @@
                         <br>
                         <%-------------------------------------------------------------%>
                         <div class="row show-grid">
-                            <div class="col-md-8">
+                            <div class="col-md-7">
 
                             </div>
                             <div class="col-md-1">
@@ -195,14 +196,14 @@
                         <br>
                         <%-------------------------------------------------------------%>
                         <div class="row show-grid">
-                            <div class="col-md-9">
+                            <div class="col-md-8">
 
                             </div>
                             <div class="col-md-1">
                                 <label class="control-label">Cantidad</label>
                             </div>
                             <div class="col-md-1">
-                                <input type="Number"  name="txtCantidad" max="<%=visPro.getStock() %>" class="form-control" placeholder="N°" >
+                                <input type="Number"  min="0" name="txtCantidad" max="<%=visPro.getStock() %>" class="form-control" placeholder="N°" >
                             </div>
                             <div class="col-md-1">
                                 <button class="btn btn-default" type="submit" name="btnAgregar">AGREGAR
@@ -213,6 +214,7 @@
                         <br>
                         <%-------------------------------------------------------------%>
                         <div class="row show-grid">
+                            <div class="ex3">
                             <table border="1" class="table">
                                 <thead>
                                     <tr>
@@ -258,7 +260,7 @@
                                 </tbody>
                             </table>
                         </div>
-                                
+                        </div>
                         <br>
                         
                         
@@ -279,17 +281,23 @@
                         <div class="row show-grid">
                             <div class="col-md-1"></div>
                             <div class="col-md-1">
+                                <a href="index.jsp" class="btn btn-default" role="button" title="INICIO">INICIO
+                                    <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-1">
                                 <a href="frmRegistrarPedido.jsp" class="btn btn-default" role="button" title="REGRESAR">REGRESAR
                                     <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
                                 </a>
                             </div>
-                            <div class="col-md-3"></div>
+                            <div class="col-md-2"></div>
                             <div class="col-md-1">
                                 <button class="btn btn-default" type="submit" name="btnNuevo">Nuevo
                                     <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <div class="col-md-4"></div>
+                            <div class="col-md-2"></div>
                             <div class="col-md-1">
                                 <button class="btn btn-default" type="submit" name="btnGenerar">Generar
                                     <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
@@ -302,4 +310,6 @@
             </div>
         </form>
     </body>
+    <script> 
+    </script>
 </html>
